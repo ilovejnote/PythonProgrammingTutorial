@@ -63,11 +63,12 @@ t_007 = "T007"
 Answer = True
 print(a, t_007, Answer)
 print(a,t_007,Answer)
-# In print if there is a , then print a " " out.
+# In print if there is a , then print a " " out.Then how to no " " print out.like down text d:
 b = (a, t_007, Answer)
 print(b)
 c = [a, t_007, Answer]
 print(c)
+print("%s%s%s" % (a,t_007,Answer))
 # The Python Programming language is dynamic language So the variable can change to integer then character
 a = 123 # a is integer
 print(a)
@@ -93,4 +94,18 @@ print(9 / 3)
 print(10 // 3)
 print(10 % 3)
 
+# add homework at the end
+# -*- coding: utf-8 -*-
+n = 123
+f = 456.789
+s1 = 'Hello, world'
+s2 = 'Hello, \'Adam\''
+s3 = r'Hello, "Bart"'
+s4 = r'''Hello,
+Lisa!'''
+print(n, f, s1, s2, s3, s4)
+s31 = 'Hello,"Bart"'
+print(s31)
+s32 = r'Hello, \'Adam\''
+print(s32)
 
