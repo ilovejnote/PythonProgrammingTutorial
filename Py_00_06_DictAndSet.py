@@ -1,4 +1,30 @@
 # -*- coding: utf-8 -*-
+# python inside the support of dict(dictionary), In other language they called it map. use (key-value) to store. quickly for look up.
+# for example first to use list, then we need two lists
+names = ['Michael', 'Bob', 'Tracy']
+scores = [95, 75, 85]
+name = input('Please enter the name for lookup:')
+for i in range(3):
+    if names[i] == name:
+        index = i
+if name in names:
+    print('Your name is %s, And your scor is %s' % (name, scores[index]))
+else:
+    print('Your enter name is not found, Please check out and try again.')
+    
+# second method
+names = ['Michael', 'Bob', 'Tracy']
+scores = [95, 75, 85]
+name = input('Please enter the name for lookup:')
+index = False
+for i in range(3):
+    if names[i] == name:
+        index = i
+        print('Your name is %s, And your scor is %s' % (name, scores[index]))
+if index == False:
+    print('Your enter name is not found, Please check out and try again.')
+
+# -*- coding: utf-8 -*-
 # To use dict (dictionary) you should use {} and : to setup it .
 d = {'Michael':95, 'Bob':75, 'Tracy':85}
 print(d['Michael'])
