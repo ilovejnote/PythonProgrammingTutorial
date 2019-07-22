@@ -76,3 +76,26 @@ print(r)
 # >>> print(r)
 # (151.96152422706632, 70.0)
 #原来返回值是一个tuple！但是，在语法上，返回一个tuple可以省略括号，而多个变量可以同时接收一个tuple，按位置赋给对应的值，所以，Python的函数返回#多值其实就是返回一个tuple，但写起来更方便。
+
+
+# Add homework after lesson
+# 请定义一个函数quadratic(a, b, c)，接收3个参数，返回一元二次方程 ax^2+bx+c=0的两个解。
+
+def quadratic(a, b, c):
+    s1 = b**2 - (4 * a * c)
+    sq1 = -b + math.sqrt(s1)
+    sq2 = -b - math.sqrt(s1)
+    x1 = sq1 / (2 * a)
+    x2 = sq2 / (2 * a)
+    return x1, x2
+# test the function of quadratic(a, b, c)
+print('quadratic(2, 3, 1) =', quadratic(2, 3, 1))
+print('quadratic(1, 3, -4) =', quadratic(1, 3, -4))
+
+if quadratic(2, 3, 1) != (-0.5, -1.0):
+    print('测试失败')
+elif quadratic(1, 3, -4) != (1.0, -4.0):
+    print('测试失败')
+else:
+    print('测试成功')
+    
