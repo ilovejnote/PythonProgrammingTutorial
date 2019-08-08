@@ -13,11 +13,18 @@ for ch in 'ABC':
 
 # The method of judge if the data can be Iteration. use "collections" Module's Iterable type .
 from collections import Iterable
-Iabc = isinstance('abc', Iteable)
-Idatas = isinstance([1, 2, 3], Iteable)
+Iabc = isinstance('abc', Iterable)
+Idatas = isinstance([1, 2, 3], Iterable)
 Id = isinstance(123, Iterable)
 print(Iabc, Idatas, Id)
+##
+##
+for i, value in enumerate(['A', 'B', 'C']):
+	print(i, value)
 
+for x, y in [(1, 1), (2, 4), (3, 9)]:
+	print(x, y)
+	
 
 # How to index the list , python use "enumerate" to change a list to a Index elements. Then can do .
 for i, value in enumerate(['A', 'B', 'C']):
